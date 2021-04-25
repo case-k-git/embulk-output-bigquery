@@ -44,7 +44,7 @@ module Embulk
           'table_name_old'                 => config.param('table_name_old',                 :string,  :default => nil), # lower version compatibility
           'auto_create_dataset'            => config.param('auto_create_dataset',            :bool,    :default => false),
           'auto_create_table'              => config.param('auto_create_table',              :bool,    :default => true),
-          'schema_file'                    => config.param('schema_file',                    :string,  :default => nil),
+          'schema_file'                    => config.param('schema_file',                    LocalFile,  :default => nil),
           'template_table'                 => config.param('template_table',                 :string,  :default => nil),
 
           'delete_from_local_when_job_end' => config.param('delete_from_local_when_job_end', :bool,    :default => true),
