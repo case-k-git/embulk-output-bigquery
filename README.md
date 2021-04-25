@@ -38,7 +38,7 @@ OAuth flow for installed applications.
 |  table                               | string      | required   |                          | table name, or table name with a partition decorator such as `table_name$20160929`|
 |  auto_create_dataset                 | boolean     | optional   | false                    | automatically create dataset |
 |  auto_create_table                   | boolean     | optional   | true                     | `false` is available only for `append_direct` mode. Other modes require `true`. See [Dynamic Table Creating](#dynamic-table-creating) and [Time Partitioning](#time-partitioning) |
-|  schema_file                         | string      | optional   |                          | /path/to/schema.json |
+|  schema_file                         | string      | optional   |                          | /path/to/schema.json or `content` |
 |  template_table                      | string      | optional   |                          | template table name. See [Dynamic Table Creating](#dynamic-table-creating) |
 |  job_status_max_polling_time         | int         | optional   | 3600 sec                 | Max job status polling time |
 |  job_status_polling_interval         | int         | optional   | 10 sec                   | Job status polling interval |
